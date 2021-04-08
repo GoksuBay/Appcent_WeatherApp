@@ -1,14 +1,14 @@
-###Appcent Task/ Weather App
+# Appcent Task/ Weather App
 
-##Main Page:
+## Main Page:
 
 List of 10 closest locations
 
-##Cities:
+## Cities:
 
 List of closest cities, difference from main page is in this page only shows the location which locationtype = City.
 You may select a city to see the weather for 7 days of the city.
 
-##API
+## API
 
 metaweather.com
