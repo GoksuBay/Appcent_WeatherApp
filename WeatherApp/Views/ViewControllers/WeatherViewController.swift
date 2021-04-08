@@ -48,11 +48,11 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath) as! WeatherTableViewCell
         let weatherViewModel = self.weatherTableViewModel.atIndexPath(indexPath.row)
         
-        cell.maxTempLabel.text = String(format: "%.2f" , weatherViewModel.maxTemp)
-        cell.minTempLabel.text = String(format: "%.2f" , weatherViewModel.minTemp)
-        cell.HumidityLabel.text = String(weatherViewModel.humidity)
+        cell.maxTempLabel.text = String(format: "%.2f" , weatherViewModel.maxTemp) + "C"
+        cell.minTempLabel.text = String(format: "%.2f" , weatherViewModel.minTemp) + "C"
+        cell.HumidityLabel.text = String(weatherViewModel.humidity) + "%"
         cell.dateLabel.text = String(weatherViewModel.date)
-        cell.windSpeedLabel.text = String(format: "%.2f" , weatherViewModel.windSpeed)
+        cell.windSpeedLabel.text = String(format: "%.2f" , weatherViewModel.windSpeed) + "km/h"
         cell.stateLabel.text = String(weatherViewModel.stateName)
         cell.directionLabel.text = String(weatherViewModel.windDirection)
         
